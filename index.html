@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Ajude-nos a conhecê-lo melhor!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Nome <input id="name" name="name-label" type="text" placeholder="Digite seu nome" required /></label>
+        <label id="email-label" for="email">E-mail <input id="email" name="email-label" type="email" placeholder="Digite seu e-mail" required /></label>
+        <label id="number-label" for="number">Número <input id="number" name="number-label" type="number" placeholder="Digite seu número" min="10" max="80"required /></label>
+        <label for="dropdown">
+          <p>Aonde você se encontra hoje?</p>
+          <select id="dropdown" name="dropdown">
+            <option value="suo">(selecione uma opção)</option>
+            <option value="estudante">Estudante</option>
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Senior</option>
+          </select>
+        </label>
+        <p>Qual a sua área favorita?</p>
+        <label for="frontend"><input id="frontend" type="radio" name="area" class="inline" checked value="frontend" /> Front-End</label>
+        <label for="backend"><input id="backend" type="radio" name="area" class="inline" checked value="backend" /> Back-End</label>
+        <label for="mobile"><input id="mobile" type="radio" name="area" class="inline" checked value="mobile" /> Mobile</label>
+        <label for="games"><input id="games" type="radio" name="area" class="inline" checked value="games" /> Games</label>
+        <P>Quais são suas linguagens favoritas?</P>
+        <input class="input-checkbox" name="prefer" type="checkbox" value="csharp">C#
+        <input class="input-checkbox" name="prefer" type="checkbox" value="cplusplus">C++
+        <input class="input-checkbox" name="prefer" type="checkbox" value="javascript">JavaScript
+        <input class="input-checkbox" name="prefer" type="checkbox" value="kotlin">Kotlin
+        <input class="input-checkbox" name="prefer" type="checkbox" value="python">Python
+        <input class="input-checkbox" name="prefer" type="checkbox" value="rust">Rust
+        </label>
+        <p>Comentários adicionais</p>
+        <textarea placeholder="Adicione seu comentário aqui"></textarea>
+        <input id="submit" type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+<label>
